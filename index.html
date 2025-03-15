@@ -1,0 +1,860 @@
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Wszystko co chcesz wiedzieć o Raku Jąder - informacje, porady, profilaktyka"
+    />
+    <meta
+      name="keywords"
+      content="Rak jąder, profilaktyka, samobadanie, zdrowie mężczyzn"
+    />
+
+    <title>KulkiPodLupą - Twój portal o Raku Jąder</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://kit.fontawesome.com/885de26243.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav class="main-nav" aria-label="Menu główne">
+      <div class="container">
+        <div class="nav-content">
+          <div class="logo">
+            <a href="/" title="Strona główna KulkiPodLupą">
+              <span class="logo-text"
+                >Kulki<span class="accent">Pod</span>Lupą</span
+              >
+            </a>
+          </div>
+
+          <button
+            class="menu-toggle"
+            aria-expanded="false"
+            aria-controls="nav-menu"
+          >
+            <span class="sr-only">Otwórz menu</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+
+          <div class="nav-menu" id="nav-menu">
+            <ul class="nav-links">
+              <li>
+                <a href="#about" title="Informacje o raku jąder"
+                  >O Raku Jąder</a
+                >
+              </li>
+              <li>
+                <a href="#care" title="Profilaktyka raka jąder">Profilaktyka</a>
+              </li>
+              <li>
+                <a href="#help" title="Jak dbać o zdrowie jąder"
+                  >Jak dbać o zdrowie</a
+                >
+              </li>
+              <li>
+                <a href="#research" title="Badania dotyczące raka jąder"
+                  >Badania</a
+                >
+              </li>
+              <li>
+                <a href="#campaign" title="Nasza akcja informacyjna"
+                  >Akcja Informacyjna</a
+                >
+              </li>
+              <li>
+                <a href="#contact" title="Skontaktuj się z nami">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <header class="hero">
+      <!-- Tło geometryczne SVG -->
+      <div class="geometric-background">
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 1440 800"
+          preserveAspectRatio="xMidYMid slice"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <defs>
+            <!-- Gradient dla tła -->
+            <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#fff6f1" />
+              <stop offset="100%" stop-color="#ffe8dd" />
+            </linearGradient>
+
+            <!-- Gradient dla kształtów -->
+            <linearGradient
+              id="shapeGradient1"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop offset="0%" stop-color="rgba(255, 107, 53, 0.15)" />
+              <stop offset="100%" stop-color="rgba(255, 107, 53, 0.05)" />
+            </linearGradient>
+
+            <linearGradient
+              id="shapeGradient2"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop offset="0%" stop-color="rgba(74, 159, 123, 0.15)" />
+              <stop offset="100%" stop-color="rgba(74, 159, 123, 0.05)" />
+            </linearGradient>
+
+            <linearGradient
+              id="shapeGradient3"
+              x1="0%"
+              y1="0%"
+              x2="100%"
+              y2="100%"
+            >
+              <stop offset="0%" stop-color="rgba(128, 103, 183, 0.15)" />
+              <stop offset="100%" stop-color="rgba(128, 103, 183, 0.05)" />
+            </linearGradient>
+          </defs>
+
+          <!-- Tło -->
+          <rect width="100%" height="100%" fill="url(#bgGradient)" />
+
+          <!-- Kształty geometryczne -->
+          <circle
+            cx="200"
+            cy="150"
+            r="300"
+            fill="url(#shapeGradient1)"
+            class="floating-shape shape1"
+          />
+          <circle
+            cx="1300"
+            cy="400"
+            r="250"
+            fill="url(#shapeGradient2)"
+            class="floating-shape shape2"
+          />
+          <path
+            d="M800,600 Q950,450 1100,600 T1400,600 L1400,800 L800,800 Z"
+            fill="url(#shapeGradient1)"
+            class="floating-shape shape3"
+          />
+          <path
+            d="M0,400 Q150,250 300,400 T600,400 L600,800 L0,800 Z"
+            fill="url(#shapeGradient3)"
+            class="floating-shape shape4"
+          />
+          <circle
+            cx="720"
+            cy="200"
+            r="150"
+            fill="url(#shapeGradient3)"
+            class="floating-shape shape5"
+          />
+        </svg>
+      </div>
+
+      <!-- Kropki i linie -->
+      <div class="dots-overlay"></div>
+
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <div class="badge">
+              <span>Kampania informacyjna</span>
+              <div class="badge-dot"></div>
+              <span>2025</span>
+            </div>
+            <h1 class="site-title">Kulki<span>Pod</span>Lupą</h1>
+            <p class="hero-subtitle">
+              Dbamy o zdrowie - bo wiemy, że jest
+              <span class="highlight">najważniejsze</span>
+            </p>
+            <div class="stats-row">
+              <div class="stat-item">
+                <div class="stat-number">95<span>%</span></div>
+                <div class="stat-label">
+                  wyleczalność<br />przy wczesnym wykryciu
+                </div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">5<span>min</span></div>
+                <div class="stat-label">miesięcznie na<br />samobadanie</div>
+              </div>
+              <div class="stat-item">
+                <div class="stat-number">10k<span>+</span></div>
+                <div class="stat-label">przebadanych<br />mężczyzn</div>
+              </div>
+            </div>
+            <div class="hero-buttons">
+              <a href="#about" class="btn btn-primary">
+                <span>Dowiedz się więcej</span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M7 17l5 5 5-5"></path>
+                  <path d="M7 7l5 5 5-5"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="image-wrapper">
+              <div class="image-border"></div>
+              <img
+                src="./images/rakbeztla.png"
+                alt="Logo kampanii KulkiPodLupą"
+                class="mascot"
+              />
+              <div class="pulse-circle"></div>
+
+              <!-- Dodatkowe elementy dekoracyjne wokół maskotki -->
+              <div class="decoration-circle circle1"></div>
+              <div class="decoration-circle circle2"></div>
+              <div class="decoration-circle circle3"></div>
+              <div class="decoration-plus plus1">+</div>
+              <div class="decoration-plus plus2">+</div>
+              <div class="decoration-plus plus3">+</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-scroll">
+          <div class="scroll-indicator" id="scroll-down">
+            <span>Przewiń w dół</span>
+            <div class="mouse-icon">
+              <div class="wheel"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Logo partnerów -->
+        <div class="partners-bar">
+          <p class="partners-title">Zaufali nam:</p>
+          <div class="partners-logos">
+            <div class="partner-logo">Pop Radio Pruszków</div>
+            <div class="partner-logo">Znicz Pruszków</div>
+            <div class="partner-logo">Gazeta WPR24</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">O Raku Jąder</h2>
+          <div class="section-content two-columns">
+            <div class="column-text">
+              <p>
+                Rak jąder to nowotwór, który najczęściej dotyka młodych mężczyzn
+                w wieku 15-35 lat. Wykryty we wczesnym stadium ma bardzo wysokie
+                szanse na całkowite wyleczenie. Dlatego tak ważna jest
+                profilaktyka i regularne samobadanie.
+              </p>
+              <div class="info-box">
+                <h3>Czy wiedziałeś?</h3>
+                <ul>
+                  <li>
+                    Rak jąder stanowi około 1-2% wszystkich nowotworów u
+                    mężczyzn, ale jest najczęstszym nowotworem u młodych
+                    mężczyzn.
+                  </li>
+                  <li>
+                    Regularne samobadanie zajmuje tylko kilka minut miesięcznie
+                    i może uratować życie.
+                  </li>
+                  <li>
+                    Wczesne wykrycie raka jąder daje ponad 95% szans na
+                    całkowite wyleczenie.
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="column-image">
+              <img
+                src="./images/removedbgeggs.png"
+                alt="Symboliczne przedstawienie projektu KulkiPodLupą"
+                class="rounded-image"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="care" class="section section-orange">
+        <div class="container">
+          <h2 class="section-title">Profilaktyka raka jąder</h2>
+          <p class="section-intro">
+            Regularne samobadanie to podstawa profilaktyki raka jąder. Oto co
+            powinieneś wiedzieć:
+          </p>
+
+          <div class="care-steps">
+            <div class="care-step">
+              <div class="step-icon">1</div>
+              <h3>Wykonuj samobadanie regularnie</h3>
+              <p>
+                Najlepiej raz w miesiącu, najlepiej po ciepłej kąpieli, gdy
+                skóra moszny jest rozluźniona.
+              </p>
+            </div>
+            <div class="care-step">
+              <div class="step-icon">2</div>
+              <h3>Zwracaj uwagę na zmiany</h3>
+              <p>
+                Szukaj zgrubień, guzków, zmian w wielkości, kształcie lub
+                konsystencji jąder.
+              </p>
+            </div>
+            <div class="care-step">
+              <div class="step-icon">3</div>
+              <h3>Skonsultuj się z lekarzem</h3>
+              <p>
+                Jeśli zauważysz cokolwiek niepokojącego, niezwłocznie umów się
+                na wizytę u urologa.
+              </p>
+            </div>
+          </div>
+
+          <div class="image-gallery">
+            <div class="gallery-item">
+              <img
+                src="./images/basket-full-eggs-nest-white-table.jpg"
+                alt="Samobadanie jąder - schemat"
+              />
+              <p>Jak wykonać samobadanie</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="./images/basket-full-eggs-nest-white-table.jpg"
+                alt="Konsultacja z lekarzem"
+              />
+              <p>Regularne badania lekarskie</p>
+            </div>
+            <div class="gallery-item">
+              <img
+                src="./images/basket-full-eggs-nest-white-table.jpg"
+                alt="Profilaktyka raka jąder"
+              />
+              <p>Zdrowy tryb życia</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="help" class="section">
+        <div class="container">
+          <h2 class="section-title">
+            5 najlepszych sposobów dbania o zdrowie jąder
+          </h2>
+
+          <div class="steps-container">
+            <div class="step-item">
+              <span class="step-number">1</span>
+              <div class="step-content">
+                <h3>Regularne samobadanie</h3>
+                <p>
+                  Wykonuj samobadanie raz w miesiącu, aby wcześnie wykryć
+                  ewentualne zmiany.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-number">2</span>
+              <div class="step-content">
+                <h3>Zdrowa dieta</h3>
+                <p>
+                  Spożywaj produkty bogate w antyoksydanty, które pomagają
+                  chronić komórki przed uszkodzeniami.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-number">3</span>
+              <div class="step-content">
+                <h3>Aktywność fizyczna</h3>
+                <p>
+                  Regularne ćwiczenia poprawiają ogólny stan zdrowia i
+                  wzmacniają układ odpornościowy.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-number">4</span>
+              <div class="step-content">
+                <h3>Unikanie szkodliwych czynników</h3>
+                <p>
+                  Ogranicz ekspozycję na dym tytoniowy i nadmierne spożycie
+                  alkoholu.
+                </p>
+              </div>
+            </div>
+
+            <div class="step-item">
+              <span class="step-number">5</span>
+              <div class="step-content">
+                <h3>Regularne wizyty u lekarza</h3>
+                <p>
+                  Konsultuj się z urologiem, szczególnie jeśli w rodzinie
+                  występowały przypadki raka jąder.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="two-columns align-center">
+            <div class="column-image">
+              <div class="image-gallery">
+                <div class="gallery-item">
+                  <img
+                    src="./images/basket-full-eggs-nest-white-table.jpg"
+                    alt="Zdrowa dieta"
+                  />
+                  <p>Zdrowe odżywianie</p>
+                </div>
+                <div class="gallery-item">
+                  <img
+                    src="./images/basket-full-eggs-nest-white-table.jpg"
+                    alt="Aktywność fizyczna"
+                  />
+                  <p>Regularne ćwiczenia</p>
+                </div>
+                <div class="gallery-item">
+                  <img
+                    src="./images/basket-full-eggs-nest-white-table.jpg"
+                    alt="Badania lekarskie"
+                  />
+                  <p>Konsultacje medyczne</p>
+                </div>
+              </div>
+            </div>
+            <div class="column-text">
+              <h3>Co możesz zrobić, aby zadbać o swoje zdrowie?</h3>
+              <p>
+                Profilaktyka raka jąder to nie tylko samobadanie. Zdrowy tryb
+                życia, odpowiednia dieta i regularna aktywność fizyczna również
+                odgrywają ważną rolę w utrzymaniu dobrego zdrowia.
+              </p>
+              <p>
+                Nawet niewielkie zmiany w codziennych nawykach mogą znacząco
+                zmniejszyć ryzyko zachorowania na raka jąder i poprawić ogólny
+                stan zdrowia.
+              </p>
+              <a href="#" class="btn btn-secondary">Dowiedz się więcej</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="research" class="section section-light">
+        <div class="container">
+          <h2 class="section-title fade-in">
+            Jak nasz projekt pomaga w walce z rakiem jąder
+          </h2>
+
+          <div class="data-chart">
+            <div class="chart-image slide-in-left">
+              <img
+                src="./images/basket-full-eggs-nest-white-table.jpg"
+                alt="Statystyki dotyczące raka jąder"
+                class="rounded-image"
+                loading="lazy"
+              />
+            </div>
+
+            <div class="chart-info slide-in-right">
+              <h3>Nasze działania</h3>
+
+              <div class="chart-info-badges">
+                <div class="info-badge">
+                  <span class="badge-icon">📊</span>
+                  <span class="badge-text">Wzrost świadomości o 43%</span>
+                </div>
+                <div class="info-badge">
+                  <span class="badge-icon">🔍</span>
+                  <span class="badge-text">2× więcej wczesnych diagnoz</span>
+                </div>
+              </div>
+
+              <p>
+                Nasz projekt skupia się na budowaniu świadomości wśród młodych
+                mężczyzn, że dbanie o zdrowie to klucz do bezpiecznej
+                przyszłości. Zachęcamy do regularnych badań i samobadania, aby
+                szybciej rozpoznawać objawy oraz zmniejszać ryzyko związane z
+                późną diagnozą.
+              </p>
+              <p>
+                Wierzymy, że dzięki edukacji i wsparciu medycznemu można
+                zapobiec wielu przypadkom zaawansowanego raka jąder i poprawić
+                jakość życia pacjentów.
+              </p>
+
+              <a href="#" class="btn btn-secondary">
+                Zobacz nasze badania
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-purple">
+        <div class="container">
+          <h2 class="section-title light">Co wiemy o raku jąder?</h2>
+          <p class="section-intro light">
+            Nasz zespół składa się z młodych odpowiedzialnych osób które chcą
+            przekonać wszystkich męzczyzn ze Rak jąder jest groźną chorobą i
+            warto badać sie
+          </p>
+
+          <div class="team-container">
+            <div class="team-member">
+              <div class="member-photo">
+                <img
+                  src="./images/handsome-handsome-guy-posing-against-white-wall.jpg"
+                  alt="Specjalista"
+                />
+              </div>
+              <div class="member-info">
+                <h3>Igor Lipka</h3>
+                <p class="member-title">Uczeń (SZKOŁA)</p>
+                <p class="member-bio">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Corrupti, possimus.
+                </p>
+              </div>
+            </div>
+
+            <div class="team-member">
+              <div class="member-photo">
+                <img
+                  src="./images/handsome-handsome-guy-posing-against-white-wall.jpg"
+                  alt="Ekspert"
+                />
+              </div>
+              <div class="member-info">
+                <h3>Igor Lipka</h3>
+                <p class="member-title">Uczeń (SZKOŁA)</p>
+                <p class="member-bio">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Corrupti, possimus.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="research-ethics">
+            <h3>W czuły punkt...</h3>
+            <p>
+              Częstym obawom towarzyszącym diagnozie "rak jąder" jest lęk przed
+              utratą sprawności seksualnej i płodności. Na szczęście wczesne
+              rozpoznanie i szybkie leczenie minimalizują ryzyko takich
+              powikłań. Sprawność seksualna zazwyczaj nie jest zagrożona,
+              natomiast w niektórych przypadkach chemioterapia może chwilowo
+              zaburzyć płodność. Zwykle jest to stan przejściowy, który mija po
+              zakończeniu terapii. Jednak by zabezpieczyć możliwość późniejszego
+              ojcostwa, lekarze często zalecają mężczyznom zdeponowanie nasienia
+              w banku przed rozpoczęciem leczenia.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Partners Section -->
+      <section id="partners" class="section section-light">
+        <div class="container">
+          <h2 class="section-title">Nasi Partnerzy</h2>
+
+          <div class="partners-content">
+            <div class="partners-message">
+              <h3>
+                Cały projekt powstaje dzięki współpracy z naszymi partnerami
+              </h3>
+              <div class="partners-illustration">
+                <img
+                  src="./images/spartnership-concept-illustration/5356723.jpg"
+                  alt="Współpraca partnerska"
+                  class="partners-image"
+                />
+              </div>
+            </div>
+
+            <div class="partners-logos">
+              <div class="partner-logo">
+                <a href="https://popradio.pl/posluchaj-nas/" target="_blank">
+                  <img
+                    src="./images/POPradio_logo.png"
+                    alt="Pop Radio Pruszków"
+                  />
+                  <span class="partner-name">Pop Radio Pruszków</span>
+                </a>
+              </div>
+              <div class="partner-logo">
+                <a href="https://zniczpruszkow.com.pl/" target="_blank">
+                  <img
+                    src="./images/Znicz-Pruszkow-logo.png"
+                    alt="Znicz Pruszków"
+                  />
+                  <span class="partner-name">Znicz Pruszków</span>
+                </a>
+              </div>
+              <div class="partner-logo">
+                <a href="https://wpr24.pl/" target="_blank">
+                  <img src="./images/wpr24.png" alt="Gazeta WPR24" />
+                  <span class="partner-name">Gazeta WPR24</span>
+                </a>
+              </div>
+            </div>
+            <div class="partners-future">
+              <h3>Wkrótce dołączą do nas kolejni partnerzy!</h3>
+              <p>
+                Śledź nasze media społecznościowe, aby być na bieżąco z nowymi
+                współpracami.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="campaign" class="section campaign-section">
+        <div class="container">
+          <div class="section-header">
+            <h2 class="section-title">Akcja Informacyjna</h2>
+            <div class="title-underline"></div>
+            <p class="section-intro">
+              Cała akcja ma na celu poinformowanie wszystkich mężczyzn o tym jak
+              bardzo ważna jest profilaktyka własnych narządów płciowych.
+            </p>
+          </div>
+
+          <div class="campaign-content">
+            <div class="campaign-collaboration">
+              <div class="collaboration-image">
+                <img
+                  src="./images/webpc-passthru.webp"
+                  alt="Cała akcję współtworzymy razem z Zwolnieni z Teorii"
+                  class="rounded-image"
+                />
+              </div>
+              <div class="collaboration-text">
+                <h3>Współpraca z Zwolnieni z Teorii</h3>
+                <p>
+                  Cała akcję współtworzymy razem z organizacją Zwolnieni z
+                  Teorii, która wspiera młodych ludzi w realizacji projektów
+                  społecznych.
+                </p>
+                <p>
+                  Dzięki tej współpracy możemy dotrzeć do szerszego grona
+                  odbiorców i skuteczniej promować wiedzę o profilaktyce raka
+                  jąder.
+                </p>
+                <div class="info-box">
+                  <div class="info-box-header">
+                    <span class="info-icon">ℹ️</span>
+                    <h3>Dlaczego to takie ważne?</h3>
+                  </div>
+                  <ul>
+                    <li>
+                      Wczesne wykrycie znacząco zwiększa szanse na całkowite
+                      wyleczenie
+                    </li>
+                    <li>
+                      Regularne samobadanie zajmuje tylko kilka minut
+                      miesięcznie
+                    </li>
+                    <li>
+                      Świadomość własnego ciała pozwala szybko zauważyć
+                      niepokojące zmiany
+                    </li>
+                  </ul>
+                </div>
+                <a href="#contact" class="btn btn-primary">Dołącz do akcji</a>
+              </div>
+            </div>
+
+            <div class="campaign-steps">
+              <div class="step-card">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                  <h3>Edukacja</h3>
+                  <p>
+                    Dostarczamy rzetelne informacje o profilaktyce i wczesnym
+                    wykrywaniu raka jąder.
+                  </p>
+                </div>
+              </div>
+              <div class="step-card">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                  <h3>Wsparcie</h3>
+                  <p>
+                    Pomagamy w kontakcie ze specjalistami i organizacjami
+                    oferującymi pomoc.
+                  </p>
+                </div>
+              </div>
+              <div class="step-card">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                  <h3>Profilaktyka</h3>
+                  <p>
+                    Promujemy regularne samobadanie jako kluczowy element dbania
+                    o zdrowie.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section section-light">
+        <div class="container">
+          <h2 class="section-title">Chcesz się z nami skontaktować?</h2>
+          <p class="section-intro">
+            Dołącz do społeczności KicikPod i pomóż wspierać badania i ochronę
+            wiewiórek!
+          </p>
+
+          <div class="contact-form-container">
+            <form class="contact-form">
+              <h3 class="form-title">Wyślij wiadomość</h3>
+
+              <div class="form-group">
+                <label for="name">Imię i nazwisko</label>
+                <input
+                  type="text"
+                  id="name"
+                  class="form-control"
+                  placeholder="Wprowadź swoje imię"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  class="form-control"
+                  placeholder="Wprowadź swój email"
+                  required
+                />
+              </div>
+
+              <div class="form-group">
+                <label for="subject">Temat</label>
+                <select id="subject" class="form-control">
+                  <option value="">Wybierz temat</option>
+                  <option value="question">Pytanie</option>
+                  <option value="collaboration">Współpraca</option>
+                  <option value="volunteer">Wolontariat</option>
+                  <option value="donation">Darowizna</option>
+                  <option value="other">Inne</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Wiadomość</label>
+                <textarea
+                  id="message"
+                  class="form-control"
+                  rows="5"
+                  placeholder="Twoja wiadomość..."
+                  required
+                ></textarea>
+              </div>
+
+              <div class="form-actions">
+                <button type="submit" class="btn btn-primary">
+                  <i class="icon-send"></i> Wyślij wiadomość
+                </button>
+              </div>
+            </form>
+
+            <div class="contact-info">
+              <h3>Inne sposoby kontaktu</h3>
+              <ul class="contact-details">
+                <li class="contact-item">
+                  <div class="contact-icon">
+                    <i class="icon-email"></i>
+                  </div>
+                  <div class="contact-text">
+                    <strong>Email:</strong>
+                    <a href="mailto:ilipkaprojekt24@gmail.com"
+                      >ilipkaprojekt24@gmail.com</a
+                    >
+                  </div>
+                </li>
+              </ul>
+
+              <h3 class="social-title">Znajdź nas</h3>
+              <div class="social-links">
+                <a href="#" class="social-link">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span>Kulki pod lupą</span>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fa-brands fa-facebook"></i>
+                  <span>Kulki pod lupą</span>
+                </a>
+                <a href="#" class="social-link">
+                  <i class="fa-brands fa-tiktok"></i>
+                  <span>kulkipodlupa</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
