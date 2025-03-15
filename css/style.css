@@ -49,6 +49,9 @@
   transition: var(--transition);
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
 .container {
   width: min(90%, 1200px); /* Modern approach using min() */
   margin-inline: auto; /* Logical property for RTL support */
