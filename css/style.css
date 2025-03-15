@@ -970,7 +970,12 @@ button:focus {
   border-top: 1px solid rgba(0, 0, 0, 0.05);
   animation: fadeIn 1s 1.5s both;
 }
-
+.partner-name {
+  color: #333333;
+}
+.smaller {
+  font-size: 0.9rem;
+}
 .partners-title {
   font-size: 0.875rem;
   color: var(--gray-color);
@@ -1020,6 +1025,7 @@ button:focus {
   grid-template-columns: repeat(2, 1fr);
   gap: clamp(2rem, 4vw, 3rem);
   align-items: start;
+  margin-bottom: 2rem;
 }
 
 .two-columns.align-center {
@@ -1027,32 +1033,78 @@ button:focus {
 }
 
 .column-text {
-  font-size: clamp(1rem, 2vw, 1.1rem);
+  font-size: clamp(1rem, 1.2vw, 1.1rem);
+  line-height: 1.6;
 }
 
 .column-text p {
   margin-bottom: 1.5rem;
+  color: var(--text-color, #333);
 }
 
 .column-text p:last-child {
-  margin-bottom: 0; /* Remove bottom margin from last paragraph */
+  margin-bottom: 0;
+}
+
+.info-box {
+  background-color: var(--accent-light, #f5f5f5);
+  border-radius: var(--radius, 8px);
+  padding: 1.5rem;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid var(--primary-color, #3a86ff);
+}
+
+.info-box h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--primary-color, #3a86ff);
+  font-size: 1.2rem;
+}
+
+.info-box ul {
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.info-box li {
+  margin-bottom: 0.75rem;
+}
+
+.info-box li:last-child {
+  margin-bottom: 0;
 }
 
 .column-image {
   display: flex;
-  margin-bottom: 20px;
   justify-content: center;
+  align-items: center;
 }
 
 .column-image img {
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  transition: var(--transition);
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius, 8px);
+  box-shadow: var(--shadow, 0 4px 12px rgba(0, 0, 0, 0.1));
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .column-image img:hover {
-  transform: scale(1.02);
-  box-shadow: var(--shadow-hover);
+  transform: scale(1.03);
+  box-shadow: var(--shadow-hover, 0 6px 16px rgba(0, 0, 0, 0.15));
+}
+
+/* Responsywność dla mniejszych ekranów */
+@media (max-width: 768px) {
+  .two-columns {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .column-image {
+    margin-top: 1rem;
+    order: -1; /* Obrazek na górze na urządzeniach mobilnych */
+  }
 }
 
 /* Info Box Component */
@@ -2129,16 +2181,6 @@ textarea.form-control {
   gap: 1rem;
 }
 
-.step-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  background: var(--primary-color);
-}
-
 .step-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
@@ -2434,6 +2476,7 @@ textarea.form-control {
   }
 
   .section-title {
+    margin-bottom: 40px;
     font-size: 2rem;
   }
 
