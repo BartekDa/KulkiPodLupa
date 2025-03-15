@@ -60,3 +60,49 @@ document.addEventListener("DOMContentLoaded", function () {
   schemaScript.textContent = JSON.stringify(schemaData);
   document.head.appendChild(schemaScript);
 });
+
+//email.js
+
+document.addEventListener("DOMContentLoaded", function () {
+  emailjs.init("GLHXZvwwzzZRsCbzW");
+
+  const form = document.querySelector(".contact-form");
+  if (form) {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      // Disable submit button to prevent multiple submissions
+      const submitButton = this.querySelector('button[type="submit"]');
+      if (submitButton) submitButton.disabled = true;
+
+      // Get form values
+      const name = document.getElementById("name").value;
+      const email = document.getElementById("email").value;
+      const subject = document.getElementById("subject").value;
+      const message = document.getElementById("message").value;
+
+      // Send email
+      emailjs
+        .send("service_1lyheom", "template_z90w3rg", {
+          user_name: name,
+          user_email: email,
+          user_subject: subject,
+          message: message,
+        })
+        .then(function (response) {
+          console.log("SUCCESS:", response);
+          alert("Wiadomość została wysłana pomyślnie!");
+          form.reset(); // Reset form fields
+        })
+        .catch(function (error) {
+          console.error("FAILED:", error);
+          alert("Wystąpił błąd podczas wysyłania wiadomości: " + error.text);
+        })
+        .finally(function () {
+          if (submitButton) submitButton.disabled = false;
+        });
+    });
+  } else {
+    console.error("Contact form not found!");
+  }
+});
