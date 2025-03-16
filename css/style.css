@@ -58,6 +58,7 @@ body {
   margin-inline: auto; /* Logical property for RTL support */
   padding-inline: 1rem;
   position: relative;
+
   z-index: 2;
 }
 
@@ -471,7 +472,7 @@ button:focus {
   position: absolute;
   overflow: hidden;
   border: none;
-  box-shadow: var(--shadow);
+
   text-transform: uppercase;
 }
 
@@ -500,7 +501,7 @@ button:focus {
 .btn-primary {
   background-color: var(--primary-color);
   color: var(--white);
-  box-shadow: 0 4px 15px rgba(var(--primary-dark), 0.3);
+  /* box-shadow: 0 1px 3px rgba(var(--primary-dark), 0.3); */
 }
 
 .btn-primary:hover {
@@ -1287,10 +1288,10 @@ button:focus {
 /* Chart Section */
 /* Research Section Styling */
 .section-light {
+  padding-bottom: 3rem;
   background-color: var(--primary-light);
   position: relative;
   overflow: hidden;
-  padding: 6rem 0;
 }
 
 /* Decorative Elements */
@@ -1667,8 +1668,9 @@ button:focus {
 
 .member-photo img {
   width: 100%;
-  height: 250px;
+  height: 350px;
   object-fit: cover;
+  background-position: center;
 }
 
 .member-info {
@@ -1702,6 +1704,7 @@ button:focus {
 /* Formularz kontaktowy - zoptymalizowany */
 .contact-form-container {
   display: grid;
+
   grid-template-columns: 1fr 1fr;
   gap: 3rem;
 }
@@ -1994,6 +1997,8 @@ textarea.form-control {
 }
 
 .partner-logo:hover {
+  background-color: var(--primary-color);
+  color: var(--white);
   transform: translateY(-5px);
   box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
 }
@@ -2004,7 +2009,7 @@ textarea.form-control {
 }
 
 .campaign-section {
-  padding: 4rem 0;
+  padding-bottom: 4rem;
 }
 
 .campaign-section::before {
@@ -2050,6 +2055,7 @@ textarea.form-control {
   font-family: var(--font-primary);
   font-size: 3rem;
   font-weight: 700;
+  padding: 20px;
   text-align: center;
   color: var(--primary-color);
   margin-bottom: 1rem;
@@ -2137,7 +2143,7 @@ textarea.form-control {
   background: var(--primary-color);
   color: white;
   border: none;
-  box-shadow: 0 5px 15px var(--primary-dark);
+  margin-bottom: 20px;
 }
 
 .btn-primary:hover {
@@ -2176,6 +2182,7 @@ textarea.form-control {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   padding: 1.5rem;
+  border: 1px solid #f5f5f5;
   display: flex;
   align-items: flex-start;
   gap: 1rem;
@@ -2183,7 +2190,7 @@ textarea.form-control {
 
 .step-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 26px 36px -9px rgba(0, 0, 0, 0.09);
 }
 
 .step-number {
@@ -2220,7 +2227,7 @@ textarea.form-control {
 /* Footer Styles */
 .site-footer {
   background-color: #f8f9fa;
-  padding: 4rem 0 2rem;
+  padding: 3rem 2rem;
   position: relative;
   color: #495057;
   border-top: 1px solid rgba(0, 0, 0, 0.05);
@@ -2279,7 +2286,7 @@ textarea.form-control {
   left: 0;
   width: 30px;
   height: 2px;
-  background-color: #ff6b35;
+  background-color: var(--primary-dark);
 }
 
 .footer-column ul {
@@ -2311,7 +2318,7 @@ textarea.form-control {
 
 .contact-info-footer i {
   width: 16px;
-  color: #4a9f7b;
+  color: var(--primary-color);
 }
 
 .footer-bottom {
