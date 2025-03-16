@@ -1,4 +1,3 @@
-/* #ff6b35 */
 :root {
   /* Colors - Fixed without ability to change */
   --primary-color: #645394;
@@ -2383,6 +2382,9 @@ textarea.form-control {
 /* Responsive adjustments */
 
 @media (max-width: 480px) {
+  .care-step {
+    text-align: center;
+  }
   .footer-column {
     min-width: 100%;
   }

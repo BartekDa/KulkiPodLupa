@@ -48,18 +48,39 @@ document.addEventListener("DOMContentLoaded", function () {
   schemaScript.type = "application/ld+json";
   const schemaData = {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    name: "KulkiPodLupą",
-    url: window.location.origin,
-    potentialAction: {
-      "@type": "SearchAction",
-      target: window.location.origin + "/search?q={search_term_string}",
-      "query-input": "required name=search_term_string",
+    "@type": "MedicalWebPage", // Bardziej konkretny typ
+    headline: "KulkiPodLupą - Twój portal o Raku Jąder",
+    description:
+      "Wszystko co chcesz wiedzieć o Raku Jąder - informacje, porady, profilaktyka",
+    mainEntityOfPage: window.location.origin,
+    publisher: {
+      "@type": "Organization",
+      name: "KulkiPodLupą",
+      logo: {
+        "@type": "ImageObject",
+        url: window.location.origin + "/images/rakbeztla.png",
+      },
+    },
+    speakable: {
+      "@type": "SpeakableSpecification",
+      cssSelector: ["#about", "#care", "#help"],
     },
   };
   schemaScript.textContent = JSON.stringify(schemaData);
   document.head.appendChild(schemaScript);
 });
+
+document
+  .querySelector(".hero-buttons a")
+  .addEventListener("click", function () {
+    // Send tracking event
+    if (typeof gtag === "function") {
+      gtag("event", "click", {
+        event_category: "engagement",
+        event_label: "learn_more_button",
+      });
+    }
+  });
 
 //email.js
 
