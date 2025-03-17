@@ -487,18 +487,20 @@
               </div>
             </div>
             <div class="column-text">
-              <h3>Co możesz zrobić, aby zadbać o swoje zdrowie?</h3>
-              <p>
-                Profilaktyka raka jąder to nie tylko samobadanie. Zdrowy tryb
-                życia, odpowiednia dieta i regularna aktywność fizyczna również
-                odgrywają ważną rolę w utrzymaniu dobrego zdrowia.
-              </p>
-              <p>
-                Nawet niewielkie zmiany w codziennych nawykach mogą znacząco
-                zmniejszyć ryzyko zachorowania na raka jąder i poprawić ogólny
-                stan zdrowia.
-              </p>
-              <a href="#" class="btn btn-secondary">Dowiedz się więcej</a>
+              <div class="scrolling-content">
+                <h3>Co możesz zrobić, aby zadbać o swoje zdrowie?</h3>
+                <p>
+                  Profilaktyka raka jąder to nie tylko samobadanie. Zdrowy tryb
+                  życia, odpowiednia dieta i regularna aktywność fizyczna
+                  również odgrywają ważną rolę w utrzymaniu dobrego zdrowia.
+                </p>
+                <p>
+                  Nawet niewielkie zmiany w codziennych nawykach mogą znacząco
+                  zmniejszyć ryzyko zachorowania na raka jąder i poprawić ogólny
+                  stan zdrowia.
+                </p>
+                <a href="#" class="btn btn-secondary">Dowiedz się więcej</a>
+              </div>
             </div>
           </div>
         </div>
@@ -590,7 +592,7 @@
                   Cześć, tu Igor! Jestem uczniem SMS Pruszków i zawodnikiem MKS
                   Znicz Pruszków. Od zawsze dbam o zdrowy tryb życia i inspiruję
                   do tego innych. Kocham podróże, dobrą muzykę i oczywiście
-                  piłkę nożną. Zdrowie to podstawa szczęśliwegoi beztroskiego
+                  piłkę nożną. Zdrowie to podstawa szczęśliwego beztroskiego
                   życia – ja już się badałem, a Ty?
                 </p>
               </div>
@@ -868,6 +870,17 @@
 
           <div class="contact-form-container">
             <form class="contact-form">
+              <div class="honeypot-field" style="display: none">
+                <label for="website"
+                  >Strona internetowa (nie wypełniaj tego pola)</label
+                >
+                <input
+                  type="text"
+                  id="website"
+                  name="website"
+                  autocomplete="off"
+                />
+              </div>
               <h3 class="form-title">Wyślij wiadomość</h3>
 
               <div class="form-group">
@@ -915,6 +928,19 @@
                 ></textarea>
               </div>
 
+              <div class="form-check">
+                <input
+                  type="checkbox"
+                  id="privacy-consent"
+                  class="form-check-input"
+                  required
+                />
+                <label for="privacy-consent" class="form-check-label">
+                  Zapoznałem/am się z
+                  <a href="./privancyPolicy.html">polityką prywatności</a>
+                  i wyrażam zgodę na przetwarzanie moich danych osobowych.
+                </label>
+              </div>
               <div class="form-actions">
                 <button type="submit" class="btn btn-primary">
                   <i class="icon-send"></i> Wyślij wiadomość
@@ -982,6 +1008,15 @@
                 <li><a href="#research">Badania</a></li>
                 <li><a href="#campaign">Akcja Informacyjna</a></li>
                 <li><a href="#contact">Kontakt</a></li>
+              </ul>
+              <h3>Informacje</h3>
+              <ul>
+                <li>
+                  <a href="./privancyPolicy.html">Polityka Prywatności</a>
+                </li>
+                <li>
+                  <a href="./privancyPolicy.html#cookies">Polityka Cookies</a>
+                </li>
               </ul>
             </div>
 
@@ -1057,6 +1092,24 @@
         </div>
       </div>
     </footer>
+
+    <div id="cookie-consent" class="cookie-banner">
+      <div class="cookie-content">
+        <p>
+          Ta strona używa plików cookie, aby zapewnić najlepsze doświadczenia.
+          Korzystając z naszej strony, zgadzasz się na używanie plików cookie
+          zgodnie z naszą
+          <a href="./privancyPolicy.html">polityką prywatności</a>.
+        </p>
+        <div class="cookie-buttons">
+          <button id="accept-cookies" class="btn btn-primary">Akceptuję</button>
+          <button id="reject-cookies" class="btn btn-secondary">
+            Odrzucam
+          </button>
+        </div>
+      </div>
+    </div>
+
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"

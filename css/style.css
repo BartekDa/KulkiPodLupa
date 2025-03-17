@@ -1583,6 +1583,12 @@ button:focus {
 }
 
 @media (max-width: 480px) {
+  .care-step {
+    text-align: center;
+  }
+  .footer-column {
+    min-width: 100%;
+  }
   .section-title {
     font-size: 1.75rem;
   }
@@ -2379,16 +2385,86 @@ textarea.form-control {
   color: #ff6b35;
 }
 
-/* Responsive adjustments */
-
-@media (max-width: 480px) {
-  .care-step {
-    text-align: center;
-  }
-  .footer-column {
-    min-width: 100%;
-  }
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  padding: 15px 0;
+  z-index: 1000;
+  display: none;
 }
+
+.cookie-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.cookie-content p {
+  margin: 10px 0;
+  flex: 1;
+  min-width: 280px;
+}
+
+.cookie-content a {
+  color: #ff6b35;
+  text-decoration: underline;
+}
+
+.cookie-buttons {
+  display: flex;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.privacy-content h2 {
+  color: var(--primary-color);
+  font-family: var(--font-primary);
+  font-size: 1.8rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1.2rem;
+  padding-left: 1rem;
+  border-left: 4px solid rgba(var(--accent-rgb), 1);
+}
+
+/* Style dla paragrafów */
+.privacy-content p {
+  margin-bottom: 1.5rem;
+  font-size: 1.1rem;
+  text-align: justify;
+  color: var(--text-color);
+}
+
+/* Style dla list */
+.privacy-content ul {
+  background-color: var(--background-light);
+  padding: 1.5rem 2rem;
+  border-radius: var(--radius);
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.privacy-content li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.privacy-content li::before {
+  content: "•";
+  color: rgba(var(--accent-rgb), 1);
+  font-weight: bold;
+  position: absolute;
+  left: 0;
+}
+
 /* Responsive Design */
 @media (max-width: 992px) {
   .two-columns,
@@ -2510,5 +2586,14 @@ textarea.form-control {
 
   .section-intro {
     padding: 0 1rem;
+  }
+  .cookie-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .cookie-buttons {
+    width: 100%;
+    justify-content: center;
   }
 }
